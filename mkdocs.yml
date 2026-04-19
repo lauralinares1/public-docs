@@ -1,0 +1,29 @@
+site_name: iamlaura — Homelab & DevOps Notes
+site_description: Documentación técnica de mis proyectos DevOps
+site_author: LauraLinares
+site_url: https://lauralinares1.github.io/public-docs
+
+theme:
+  name: material
+  palette:
+    scheme: slate           # Tema oscuro, queda más técnico
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - content.code.copy     # Botón de copiar en bloques de código
+
+nav:
+  - Inicio: index.md
+  - Guías:
+      - Matrix: guias/matrix.md
+      - Vaultwarden: guias/vaultwarden.md
+
+markdown_extensions:
+  - pymdownx.highlight      # Sintaxis coloreada en código
+  - pymdownx.superfences    # Bloques de código anidados
+  - admonition              # Cajas de nota/advertencia
+  - toc:
+      permalink: true
